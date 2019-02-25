@@ -9,6 +9,7 @@ SECRET_KEY = 'Sup3r$3cretkey'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-#app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 from app import views
+
