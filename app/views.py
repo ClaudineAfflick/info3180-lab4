@@ -75,7 +75,6 @@ def logout():
 def files():
     if not session.get('logged_in'):
         abort(401)
-      
     return render_template('files.html', image=get_uploaded_images())
 
 
